@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: jersey-united-cricket-club
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: NODE_VERSION
+        value: 24.19.0
